@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>json</title>
+
+    <style>
+        body{
+            background-color: lightgray;
+        }
+        .logo {
+            margin-left: 1.5rem;
+        }
+        img{
+            width: 600px;
+            height: 200px;
+        }
+        .first {
+            display: flex;
+            flex-direction: row;
+        }
+        .first>div{
+            width: 260px;
+            font-weight: 500;
+            text-transform: uppercase;
+            text-align: center;
+            border: 1px solid black;
+            font-size: 1.5rem;
+            padding: 1rem;
+            background-color: brown;
+            color: white;
+        }
+        #app{
+            display: flex;
+            flex-direction: column;
+        }
+        .main{
+            display: flex;
+            flex-direction: row;
+        }
+        .main>div {
+            width: 260px;
+            height: auto;
+            padding: 1rem;
+            border: 1px solid black;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            text-transform: capitalize;
+            font-size: 1.2rem;
+        }
+        
+        @media (max-width: 800px) {
+            .flex-container {
+            flex-direction: column;}
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="logo">
+        <img src="lidingo.png" alt="lidingo">
+    </div>
+
+    <div class="first">
+        <div>fakt.nr</div>
+        <div>forvaltning</div>
+        <div>konterat</div>
+        <div>konto</div>
+        <div>leverantor</div>
+        <div>org.nr</div>
+    </div>
+
+    <div id="app"></div>
+    
+    <script src="main.js"></script>
+
+</body>
+</html>
